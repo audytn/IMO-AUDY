@@ -252,7 +252,7 @@ contract ArtworkNFT is ERC721PausableUpgradeable, AccessControlUpgradeable, Owna
     function minterOf(uint256 _tokenId) external view returns (address) {
         return _minter[_tokenId];
     }
-}
+
 
     function mintTime(uint256 tokenId) public view returns (uint256) {
         require(_exists(tokenId), "ERC721Metadata: URI query for nonexistent token");
